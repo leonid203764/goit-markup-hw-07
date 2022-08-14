@@ -1,0 +1,97 @@
+.flex-item {
+    margin-right: 8px;
+  }
+  .flex-item:last-child {
+    margin-right: 0;
+  }
+  .btn-active {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                background-color  250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: inherit;
+    @include font(16px, 500, 26px);
+    border: none;
+    padding: 6px 22px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    border-radius: 4px;
+    &:hover,
+    &:focus {
+    color: var(--secondary-color);
+    background-color: #188ce8;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  }
+  .current-1 {
+    background: var(--accent-color);
+    color: var(--secondary-color);
+  }
+  .box__element {
+    position: relative;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+    &:nth-child(3n) {
+    margin-right: 0;
+  }
+    &:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  }
+  .wrapper__text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .wrapper {
+    display: block;
+    width: 370px;
+    text-decoration: none;
+  }
+  .wrapper__img {
+    position: relative;
+    overflow: hidden;
+  }
+  .wrapper__overlay {
+    position: absolute;
+    top:  0;
+    left: 0;
+    overflow: auto;
+    transform: translate(0, 100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto';
+    font-style: normal;
+    @include font(18px, 400, 28px);
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 24px 63px;
+  }
+  .box__element:hover .wrapper__overlay {
+    transform: translate(0, 0);
+  }
+  .wrapper__title {
+    font-family: var(--primary-font);
+    font-style: normal;
+    @include font(18px, 700, 36px);
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+    margin-bottom: 4px;
+  }
+  .wrapper__description {
+    font-family: var(--primary-font);
+    font-style: normal;
+    @include font(16px, 400, 30px);
+    letter-spacing: 0.03em;
+    color: var(--contacts-color);
+  }

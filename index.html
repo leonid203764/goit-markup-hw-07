@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
     <!--HEADER-->
@@ -23,33 +23,33 @@
       <div class="container main-header-container">
         <nav class="navigation">
           <a class="link logo" href="" lang="en"
-            >Web<span class="logo-title">Studio</span></a
+            >Web<span class="logo__title">Studio</span></a
           >
           <ul class="menu list">
-            <li class="menu-item">
-              <a class="menu-link link current" href="./index.html">Студія</a>
+            <li class="menu__item">
+              <a class="menu__link link current" href="./index.html">Студія</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="./portfolio.html">Портфоліо</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="list navigation list-contacts">
-          <li class="menu-item">
+          <li class="menu__item">
             <div class="logo-contacts">
               <a class="contacts link" href="mailto:info@devstudio.com">
-                <svg class="logo-link" width="16" height="12">
+                <svg class="contacts__logo" width="16" height="12">
                   <use href="./images/sprite.svg#icon-mail"></use>
                 </svg>info@devstudio.com</a>
             </div>
           </li>
-          <li class="menu-item">
+          <li class="menu__item">
             <div class="logo-contacts">
               <a class="contacts link" href="tel:+380961111111">
-                <svg class="logo-link" width="10" height="16">
+                <svg class="contacts__logo" width="10" height="16">
                   <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>+38 096 111 11 11</a>
             </div>
@@ -59,7 +59,7 @@
     </header>
     <main>
       <!--HERO-->
-      <section class="hero hero-description">
+      <section class="hero">
         <div class="container">
           <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="modal-btn" type="button" data-modal-open>Замовити послугу</button>
@@ -68,64 +68,64 @@
       <!--ABOUT-->
       <section class="section-main">
         <div class="container">
-          <h2 hidden>Наши приемущества</h2>
-          <ul class="list flex-list">
-            <li class="flex-element-link">
-              <div class="flex-element-item">
-                <div class="thumb">
+          <h2 hidden>Нащі переваги</h2>
+          <ul class="list case">
+            <li class="case__link">
+              <div class="case__item">
+                <div class="case__thumb">
                   <a href="" class="">
-                    <svg class="logo-item" width="70" height="70">
+                    <svg class="case__logo" width="70" height="70">
                       <use href="./images/sprite.svg#icon-antenna"></use>
                     </svg>
                   </a>
                 </div>
-                <h3 class="section-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="description-menu">
+                <h3 class="case__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="case__descr">
                   Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                 </p>
               </div>
             </li>
-            <li class="flex-element-link">
-              <div class="flex-element-item">
-                <div class="thumb">
+            <li class="case__link">
+              <div class="case__item">
+                <div class="case__thumb">
                   <a href="" class="">
-                    <svg class="logo-item" width="70" height="70">
+                    <svg class="case__logo" width="70" height="70">
                       <use href="./images/sprite.svg#icon-clock"></use>
                     </svg>
                   </a>
                 </div>
-                <h3 class="section-title">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="description-menu">
+                <h3 class="case__title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="case__descr">
                   Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                 </p>
               </div>
             </li>
-            <li class="flex-element-link">
-              <div class="flex-element-item">
-                <div class="thumb">
+            <li class="case__link">
+              <div class="case__item">
+                <div class="case__thumb">
                   <a href="" class="">
-                    <svg class="logo-item" width="70" height="70">
+                    <svg class="case__logo" width="70" height="70">
                       <use href="./images/sprite.svg#icon-diagram"></use>
                     </svg>
                   </a>
                 </div>
-                <h3 class="section-title">ПЛАНУВАННЯ</h3>
-                <p class="description-menu">
+                <h3 class="case__title">ПЛАНУВАННЯ</h3>
+                <p class="case__descr">
                   Так само консультація з широким активом значною мірою зумовлює.
                 </p>
               </div>
             </li>
-            <li class="flex-element-link">
-              <div class="flex-element-item">
-                <div class="thumb">
+            <li class="case__link">
+              <div class="case__item">
+                <div class="case__thumb">
                   <a href="" class="">
-                    <svg class="logo-item" width="70" height="70">
+                    <svg class="case__logo" width="70" height="70">
                       <use href="./images/sprite.svg#icon-astronaut"></use>
                     </svg>
                   </a>
                 </div>
-                <h3 class="section-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="description-menu">
+                <h3 class="case__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="case__descr">
                   Значимість цих проблем настільки очевидна, що реалізація планових завдань.
                 </p>
               </div>
@@ -135,12 +135,12 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="list-header">Чим ми займаємося</h2>
-          <ul class="list flex-container">
-            <li class="flex-element">
+          <h2 class="section__heading">Чим ми займаємося</h2>
+          <ul class="list box">
+            <li class="box__element">
               <img
                 src="./images/work/work1.jpg"
-                alt="Вариант 1"
+                alt="Варіант 1"
                 width="370"
                 height="294"
               />
@@ -148,10 +148,10 @@
                 <p class="element">Десктопні додатки</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="box__element">
               <img
                 src="./images/work/work2.jpg"
-                alt="Вариант 2"
+                alt="Варіант 2"
                 width="370"
                 height="294"
               />
@@ -159,10 +159,10 @@
                 <p class="element">Мобільні додатки</p>
               </div>
             </li>
-            <li class="flex-element">
+            <li class="box__element">
               <img
                 src="./images/work/work3.jpg"
-                alt="Вариант 3"
+                alt="Варіант 3"
                 width="370"
                 height="294"
               />
@@ -176,9 +176,9 @@
       <!--TEAM-->
       <section class="section container-team">
         <div class="container">
-          <h2 class="list-header">Наша команда</h2>
-          <ul class="list flex-container-list">
-            <li class="flex-element-list">
+          <h2 class="section__heading">Наша команда</h2>
+          <ul class="list grid">
+            <li class="box__element-list">
               <img
                 src="./images/employers/product-designer.jpg"
                 alt="Фото 1"
@@ -222,7 +222,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-element-list">
+            <li class="box__element-list">
               <img
                 src="./images/employers/frontend-developer.jpg"
                 alt="Фото 2"
@@ -266,7 +266,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-element-list">
+            <li class="box__element-list">
               <img
                 src="./images/employers/marketing.jpg"
                 alt="Фото 3"
@@ -308,7 +308,7 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-element-list">
+            <li class="box__element-list">
               <img
                 src="./images/employers/ui-designer.jpg"
                 alt="Фото 4"
@@ -357,46 +357,46 @@
     <!--CLIENTS-->
     <section class="section">
       <div class="container">
-        <h2 class="list-header">Постійні клієнти</h2>
-        <ul class="list flex-container-list">
-          <li class="flex-element-menu">
-            <a href="" class="social-list-menu">
-              <svg class="social-icon" width="106" height="60">
+        <h2 class="section__heading">Постійні клієнти</h2>
+        <ul class="list grid">
+          <li class="grid__item">
+            <a href="" class="company">
+              <svg class="company__icon" width="106" height="60">
                 <use href="./images/sprite.svg#icon-yaco"></use>
               </svg>
             </a>
           </li>
-          <li class="flex-element-menu">
-            <a href="" class="social-list-menu">
-              <svg class="social-icon" width="106" height="60">
+          <li class="grid__item">
+            <a href="" class="company">
+              <svg class="company__icon" width="106" height="60">
                 <use href="./images/sprite.svg#icon-company1"></use>
               </svg>
             </a>
           </li>
-          <li class="flex-element-menu">
-            <a href="" class="social-list-menu">
-              <svg class="social-icon" width="106" height="60">
+          <li class="grid__item">
+            <a href="" class="company">
+              <svg class="company__icon" width="106" height="60">
                 <use href="./images/sprite.svg#icon-company2"></use>
               </svg>
             </a>
           </li>
-          <li class="flex-element-menu">
-            <a href="" class="social-list-menu">
-              <svg class="social-icon" width="106" height="60">
+          <li class="grid__item">
+            <a href="" class="company">
+              <svg class="company__icon" width="106" height="60">
                 <use href="./images/sprite.svg#icon-company3"></use>
               </svg>
             </a>
           </li>
-          <li class="flex-element-menu">
-            <a href="" class="social-list-menu">
-              <svg class="social-icon" width="106" height="60">
+          <li class="grid__item">
+            <a href="" class="company">
+              <svg class="company__icon" width="106" height="60">
                 <use href="./images/sprite.svg#icon-brand"></use>
               </svg>
             </a>
           </li>
-          <li class="flex-element-menu">
-            <a href="" class="social-list-menu">
-              <svg class="social-icon" width="106" height="60">
+          <li class="grid__item">
+            <a href="" class="company">
+              <svg class="company__icon" width="106" height="60">
                 <use href="./images/sprite.svg#icon-company4"></use>
               </svg>
             </a>

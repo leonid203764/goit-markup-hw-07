@@ -1,0 +1,8 @@
+.section-description {
+    font-family: var(--primary-font);
+    font-style: normal;
+    @include font(16px, 400, 28px);
+    letter-spacing: 0.03em;
+    color: var(--contacts-color);
+    margin-bottom: 9px;
+  }
